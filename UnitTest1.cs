@@ -17,5 +17,17 @@ namespace UnitTestProject1
             Assert.IsTrue(result==@"D:\ПОЛИТЕХ\ПИ12А-8сем\vertify15\лабы\tdd\tdd\bin\Debug\myfile.txt");
 
         }
+        [TestMethod]
+        public void TestMakeNew()
+        {
+            var test_file = new NewFile();
+            test_file.MakeNew();
+            var result = test_file.way;
+            Assert.IsTrue(result == @"D:\ПОЛИТЕХ\ПИ12А-8сем\vertify15\лабы\tdd\tdd\bin\Debug\myfile.txt");
+
+
+        }
+        
+       
     }
 }
